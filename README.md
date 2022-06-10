@@ -6,6 +6,7 @@ A discord bot for detecting images sent without alt text/descriptions.
 Useful in servers that have users with screen readers, as without the alt text the screen readers cannot function.
 
 [Invite Link](https://discord.com/api/oauth2/authorize?client_id=984816760500932699&permissions=274877917184&scope=bot%20applications.commands)
+
 [Support Discord](https://discord.gg/x7CyFRA5s6)
 
 
