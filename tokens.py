@@ -1,2 +1,0 @@
-
-test_bot_token = "ODExNTY3NjQyNzk5MjQzMjk1.YC0FRA.kKdmAsj_QnMh0JVhPjRPemWB5DQ"
