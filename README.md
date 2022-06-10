@@ -1,6 +1,6 @@
 # Alt Text Detective
 
-![pfp]()
+![pfp](https://raw.githubusercontent.com/quackersian/alt-text-identifier/master/pfp.png)
 ![v0.1.0](https://img.shields.io/badge/version-v0.1.0-blue)
 
 A discord bot for detecting images sent without alt text/descriptions.
