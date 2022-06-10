@@ -24,7 +24,7 @@ Useful in servers that have users with screen readers, as without the alt text t
 
 ## Setup
 1. Invite the bot (duh!).
-2. Create a role called "AltTextAdmin", with permissions to use slash commands.
+2. Create a role called `AltTextAdmin`, with permissions to use slash commands.
 3. Assign that role to you or anyone who will change the config of the bot in your server.
-4. Use /setup to setup the bot in your server.
+4. Use `/setup` to setup the bot in your server.
 5. Send images!
