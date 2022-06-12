@@ -23,6 +23,9 @@ Useful in servers that have users with screen readers, as without the alt text t
 - Send Messages in Threads
 - Manage Messages (if you want the bot to delete images without alt text.)
 
+## License
+[MIT License - Free to use and modify](https://github.com/quackersian/alt-text-detective/blob/master/LICENSE)
+
 ## Setup
 1. Invite the bot (duh!).
 2. Create a role called `AltTextAdmin`, with permissions to use slash commands.
