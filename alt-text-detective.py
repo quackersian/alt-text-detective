@@ -376,10 +376,15 @@ async def on_message(
                         if action_log_channel != 0:
                             #log the user and channel that the invalid image was sent in.
                             log_channel = await ctx.guild.fetch_channel(action_log_channel)
-                            if delete_invalid_messages == "True":
-                                await log_channel.send(f"Deleted an image from {ctx.author.mention}  in {ctx.channel.mention} with no alt-text.")
-                            else:
-                                await log_channel.send(f"Found an image from {ctx.author.mention}  in {ctx.channel.mention} with no alt-text. \n {ctx.jump_url}")
+                            try:
+                                if delete_invalid_messages == "True":
+                                    await log_channel.send(f"Deleted an image from {ctx.author.mention}  in {ctx.channel.mention} with no alt-text.")
+                                else:
+                                    await log_channel.send(f"Found an image from {ctx.author.mention}  in {ctx.channel.mention} with no alt-text. \n {ctx.jump_url}")
+                            
+                            except disnake.errors.Forbidden:
+                                #if the bot doesn't have access to the channel
+                                logging.warning(f"Couldn't log message in {log_channel}.")
 
                     else:
                         logging.debug("Image had description, well done!")
