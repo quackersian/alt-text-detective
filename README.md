@@ -1,6 +1,6 @@
 # Alt Text Detective
 
-![v0.2.0](https://img.shields.io/badge/version-v0.2.0-blue)
+![v0.2.1](https://img.shields.io/badge/version-v0.2.1-blue)
 
 A discord bot for detecting images sent without alt text/descriptions.
 Useful in servers that have users with screen readers, as without the alt text the screen readers cannot function.

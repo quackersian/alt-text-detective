@@ -4,7 +4,7 @@ from disnake.ext import commands
 req_intents = disnake.Intents.default()
 req_intents.members = True
 req_intents.message_content = True
-bot = commands.InteractionBot(intents=req_intents, test_guilds=[config.test_guild_id])
+bot = commands.InteractionBot(intents=req_intents)
 
 
 #sets up logging using the standard logging library. Configure the level in the config.py file.
@@ -151,7 +151,7 @@ async def on_ready():
     game = disnake.Game("with images")#status is always "playing x" where x is game
     await bot.change_presence(status=disnake.Status.online, activity=game)
     logging.info(f"{config.bot_name} ready")
-    print(f"{config.bot_name} ready")
+    #print(f"{config.bot_name} ready")
      
 
 #creates the admin role when joining a server
@@ -371,8 +371,7 @@ async def on_message(
                                 await ctx.channel.send(f"Hey {ctx.author.mention}, please add descriptions to your images!")
 
                         if delete_invalid_messages == "True":
-                            await ctx.delete()
-                        
+                            await ctx.delete()       
                         if action_log_channel != 0:
                             #log the user and channel that the invalid image was sent in.
                             log_channel = await ctx.guild.fetch_channel(action_log_channel)
@@ -486,4 +485,4 @@ async def secret_error(inter: disnake.ApplicationCommandInteraction, error):
 if __name__ == "__main__":
     setup_logging()
     setup_db()
-    bot.run(tokens.test_bot_token)
+    bot.run(tokens.live_token)
