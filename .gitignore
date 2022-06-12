@@ -2,7 +2,7 @@
 tokens.py
 bot.log
 guild_config.db
-timestamp.txt
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
